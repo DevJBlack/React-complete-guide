@@ -29,6 +29,19 @@ const App = () => {
       )
     }
 
+    const nameChangedHandler = (e) => {
+      return (
+        setPersons({
+          persons: [
+            {name: 'Max', age: 28},
+            {name: e.target.value, age: 24},
+            {name: 'Jesse', age: 24}
+            
+          ]
+        })
+      )
+    }
+
   return (
     <div className="App">
       <h1>Hello There</h1>
@@ -39,7 +52,9 @@ const App = () => {
       <Person 
         name={personState.persons[1].name} 
         age={personState.persons[1].age}
-        click={ switchNameHandler.bind(this,'Dev!') } >My Hobbies: Running</Person>
+        click={ switchNameHandler.bind(this,'Dev!') } 
+        changed={ nameChangedHandler }
+        >My Hobbies: Running</Person>
       <Person 
         name={personState.persons[2].name} 
         age={personState.persons[2].age} />
