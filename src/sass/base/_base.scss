@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //This makes it so 1rem is exactly 10px. 16px is the browser default. so 10/16 = 62.5%
+}
+
+
+.App {
+  text-align: center;
+}

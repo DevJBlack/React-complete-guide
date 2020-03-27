@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './App.css';
+import './sass/App.scss'
+import UserInput from './Components/UserInput'
 
 import Person from './Person/Person'
 
@@ -45,7 +46,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>Hello There</h1>
-      <button onClick={() => switchNameHandler('Devin James Black') } >Switch Name</button>
+      <button className='btn btn-white' onClick={() => switchNameHandler('Devin James Black') } >Switch Name</button>
       <Person 
         name={personState.persons[0].name} 
         age={personState.persons[0].age} />
@@ -58,6 +59,8 @@ const App = () => {
       <Person 
         name={personState.persons[2].name} 
         age={personState.persons[2].age} />
+
+        <UserInput />
     </div>
   );
 }
