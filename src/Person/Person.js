@@ -1,4 +1,5 @@
 import React from 'react'
+import Radium from 'radium'
 
 // const randomAge = Math.floor(Math.random() * 30)
 
@@ -11,4 +12,4 @@ const Person = (props) => {
   )
 }
 
-export default Person
+export default Radium(Person)
