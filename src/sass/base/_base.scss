@@ -14,4 +14,17 @@ html {
 
 .App {
   text-align: center;
+
+    p {
+      margin: 1rem;
+      font-size: 1.5rem;
+    }
+}
+
+.red {
+  color: red;
+}
+
+.bold {
+  font-weight: bold;
 }
