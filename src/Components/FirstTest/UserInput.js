@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import UserOutput from './UserOutput'
+import UserOutput from '../UserOutput'
 
 const UserInput = () => {
   const [names, setNames] = useState({
