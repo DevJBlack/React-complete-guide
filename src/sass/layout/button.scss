@@ -1,20 +1,14 @@
 .btn {
+  background-color:green;
+  color:white;
+  font: inherit;
+  border: 1px solid blue;
+  padding: 8px;
+  cursor: pointer;
 
-  &-white {
-    background-color: #fff;
-    font-family: inherit;
-    border: 1px solid blue;
-    padding: .8rem;
-    cursor: pointer;
+  &:hover {
+    background-color:lightgreen;
+    color: black;
   }
 
-  &-blue {
-    margin: 1rem;
-    background-color: blue;
-    color: paleturquoise;
-    padding: 1rem;
-    cursor: pointer;
-    border:none;
-    border-radius: 1rem;
-  }
 }
