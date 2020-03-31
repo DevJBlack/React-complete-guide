@@ -17,9 +17,9 @@ const TestInput = () => {
   }
 
 
-  let charlist = arr.split('').map((ch, index) => {
+  let charlist = arr.split('').map((letters, index) => {
     return <TestChart 
-      character={ch} 
+      character={letters} 
       key={index} 
       click={() => deleteCharHandler(index)} />
   })
